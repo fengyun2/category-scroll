@@ -1,28 +1,267 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <cascad-menu :menus="menus"></cascad-menu>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CascadMenu from './components/cascad-menu.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    CascadMenu
+  },
+  data () {
+    return {
+      menus: [
+        {
+          name: '菜单1',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单8',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单2',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单3',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单4',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单5',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单6',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单7',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单8',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        },
+        {
+          name: '菜单9',
+          data: [
+            {
+              name: '1.1'
+            },
+            {
+              name: '1.2'
+            },
+            {
+              name: '1.3'
+            },
+            {
+              name: '1.4'
+            },
+            {
+              name: '1.5'
+            },
+            {
+              name: '1.6'
+            }
+          ]
+        }
+      ],
+      translatedText: '',
+      list: [],
+      pullup: true
+    }
   }
 }
 </script>
-
-<style>
+<style lang="stylus">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+li {
+  list-style: none;
+  heigh: 60px;
 }
 </style>
