@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "better-scroll": "^1.12.6",
-    "vue": "^2.5.17"
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",
